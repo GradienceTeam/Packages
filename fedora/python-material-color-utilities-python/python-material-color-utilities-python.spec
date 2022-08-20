@@ -2,7 +2,7 @@
 %global         module material_color_utilities_python
 
 Name:           python-%{pypi_name}
-Version:        0.1.3
+Version:        0.1.4
 Release:        %autorelease
 Summary:        Python port of material-color-utilities used for Material You colors
 
