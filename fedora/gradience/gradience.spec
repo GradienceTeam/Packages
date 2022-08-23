@@ -2,13 +2,13 @@
 %global         uuid com.github.GradienceTeam.Gradience
 
 Name:           gradience
-Version:        0.2.0
+Version:        0.1.0
 Release:        %autorelease
 Summary:        Change the look of Adwaita, with ease
 BuildArch:      noarch
 
 #global         tag %%{version}
-%global         branch main
+#%global         branch main
 %forgemeta
 
 License:        GPL-3.0-or-later
