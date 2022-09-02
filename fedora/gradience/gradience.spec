@@ -18,6 +18,8 @@ BuildRequires:  meson
 BuildRequires:  blueprint-compiler
 BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(libadwaita-1) >= 1.2
+BuildRequires:  pkgconfig(libportal)
+BuildRequires:  pkgconfig(libportal-gtk4)
 BuildRequires:  python3-devel
 BuildRequires:  python3-gobject-devel
 BuildRequires:  python3dist(anyascii)
@@ -26,6 +28,11 @@ BuildRequires:  python3dist(svglib)
 BuildRequires:  libappstream-glib
 BuildRequires:  desktop-file-utils
 Requires:       hicolor-icon-theme
+Requires:       gtk4
+Requires:       libadwaita
+Requires:       libportal
+Requires:       libportal-gtk4
+Requires:       python3-gobject
 Requires:       python3dist(anyascii)
 Requires:       python3dist(material-color-utilities-python)
 Requires:       python3dist(svglib)
