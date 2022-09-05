@@ -29,7 +29,7 @@ BuildRequires:  libappstream-glib
 BuildRequires:  desktop-file-utils
 Requires:       hicolor-icon-theme
 Requires:       gtk4
-Requires:       libadwaita
+Requires:       libadwaita >= 1.2
 Requires:       libportal
 Requires:       libportal-gtk4
 Requires:       python3-gobject
