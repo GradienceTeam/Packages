@@ -32,6 +32,7 @@ Requires:       gtk4
 Requires:       libadwaita >= 1.2
 Requires:       libportal
 Requires:       libportal-gtk4
+Requires:       python3-pluggy
 Requires:       python3-gobject
 Requires:       python3dist(anyascii)
 Requires:       python3dist(material-color-utilities-python)
