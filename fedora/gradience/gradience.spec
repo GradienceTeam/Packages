@@ -16,6 +16,7 @@ Source0:        %{forgesource}
 
 BuildRequires:  meson
 BuildRequires:  blueprint-compiler
+BuildRequires:  sassc
 BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(libadwaita-1) >= 1.2
 BuildRequires:  pkgconfig(libportal)
