@@ -2,7 +2,7 @@
 %global         uuid com.github.GradienceTeam.Gradience
 
 Name:           gradience
-Version:        0.2.2
+Version:        0.3.0
 Release:        %autorelease
 Summary:        Change the look of Adwaita, with ease
 BuildArch:      noarch
@@ -22,9 +22,13 @@ BuildRequires:  pkgconfig(libportal)
 BuildRequires:  pkgconfig(libportal-gtk4)
 BuildRequires:  python3-devel
 BuildRequires:  python3-gobject-devel
+BuildRequires:  python3dist(aiohttp)
 BuildRequires:  python3dist(anyascii)
+BuildRequires:  python3dist(cssutils)
+BuildRequires:  python3dist(jinja2)
 BuildRequires:  python3dist(material-color-utilities-python)
 BuildRequires:  python3dist(svglib)
+BuildRequires:  python3dist(yapsy)
 BuildRequires:  libappstream-glib
 BuildRequires:  desktop-file-utils
 Requires:       hicolor-icon-theme
@@ -33,9 +37,13 @@ Requires:       libadwaita >= 1.2
 Requires:       libportal
 Requires:       libportal-gtk4
 Requires:       python3-gobject
+Requires:       python3dist(aiohttp)
 Requires:       python3dist(anyascii)
+Requires:       python3dist(cssutils)
+Requires:       python3dist(jinja2)
 Requires:       python3dist(material-color-utilities-python)
 Requires:       python3dist(svglib)
+Requires:       python3dist(yapsy)
 
 %description
 Gradience is a tool for customizing Libadwaita applications and the adw-gtk3 theme.
