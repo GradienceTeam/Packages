@@ -21,7 +21,7 @@ BuildRequires:  pkgconfig(gtk4)
 BuildRequires:  pkgconfig(libadwaita-1) >= 1.2
 BuildRequires:  pkgconfig(libportal)
 BuildRequires:  pkgconfig(libportal-gtk4)
-BuildRequires:  pkgconfig(libsoup-3.0)
+BuildRequires:  pkgconfig(libsoup-3.0) >= 3.2.0
 BuildRequires:  python3-devel
 BuildRequires:  python3-gobject-devel
 BuildRequires:  python3dist(aiohttp)
@@ -38,7 +38,7 @@ Requires:       gtk4
 Requires:       libadwaita >= 1.2
 Requires:       libportal
 Requires:       libportal-gtk4
-Requires:       libsoup3
+Requires:       libsoup3 >= 3.2.0
 Requires:       python3-gobject
 Requires:       python3dist(aiohttp)
 Requires:       python3dist(anyascii)
