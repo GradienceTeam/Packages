@@ -61,7 +61,7 @@ With Gradience you can:
 
 
 %prep
-%forgeautosetup -S git
+%forgeautosetup
 
 
 %build
