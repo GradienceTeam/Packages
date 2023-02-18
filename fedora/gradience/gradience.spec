@@ -7,7 +7,8 @@ Release:        %autorelease
 Summary:        Change the look of Adwaita, with ease
 BuildArch:      noarch
 
-%global         tag %{version}
+#global         tag %%{version}
+%global         commit 9302552892e3f535ad8da59cbd11370d14e52ec6
 %forgemeta
 
 License:        GPL-3.0-or-later
@@ -60,7 +61,7 @@ With Gradience you can:
 
 
 %prep
-%forgeautosetup
+%forgeautosetup -S git
 
 
 %build
@@ -82,6 +83,7 @@ desktop-file-validate %{buildroot}/%{_datadir}/applications/%{uuid}.desktop
 %license LICENSE
 %doc README.md
 %{_bindir}/gradience
+%{_bindir}/gradience-cli
 %{python3_sitelib}/gradience
 %{_datadir}/gradience
 %{_datadir}/appdata/%{uuid}.appdata.xml
