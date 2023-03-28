@@ -16,7 +16,10 @@
 , libsoup_3
 , pkg-config
 , python3Packages
-, wrapGAppsHook }:
+, wrapGAppsHook
+
+
+, blueprint}:
 
 python3Packages.buildPythonApplication rec {
   pname = "gradience";
@@ -39,6 +42,7 @@ python3Packages.buildPythonApplication rec {
     ninja
     pkg-config
     wrapGAppsHook
+    blueprint
   ];
 
   buildInputs = [
