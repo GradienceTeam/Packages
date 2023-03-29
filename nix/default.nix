@@ -17,9 +17,9 @@
 , pkg-config
 , python3Packages
 , wrapGAppsHook
-
-
-, blueprint}:
+, blueprint-compiler
+, desktop-file-utils
+}:
 
 python3Packages.buildPythonApplication rec {
   pname = "gradience";
@@ -42,7 +42,8 @@ python3Packages.buildPythonApplication rec {
     ninja
     pkg-config
     wrapGAppsHook
-    blueprint
+    blueprint-compiler
+    desktop-file-utils
   ];
 
   buildInputs = [
