@@ -2,7 +2,7 @@
 %global         module material_color_utilities_python
 
 Name:           python-%{pypi_name}
-Version:        0.1.4
+Version:        0.1.5
 Release:        %autorelease
 Summary:        Python port of material-color-utilities used for Material You colors
 
@@ -12,6 +12,9 @@ Source:         %{pypi_source %{pypi_name}}
 
 BuildArch:      noarch
 BuildRequires:  python3-devel
+BuildRequires:  git-core
+
+Patch0:         0001-Removing-Pillow-version-requirement.patch
 
 %global _description %{expand:
 Python port of material-color-utilities used for Material You colors.
@@ -32,7 +35,7 @@ Summary:        %{summary}
 
 
 %prep
-%autosetup -p1 -n %{pypi_name}-%{version}
+%autosetup -S git -n %{pypi_name}-%{version}
 
 
 %generate_buildrequires
